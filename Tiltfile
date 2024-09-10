@@ -4,10 +4,10 @@ allow_k8s_contexts('polar')
 # Build
 custom_build(
     # Name of the container image
-    ref = 'erojas14ths/cf-config-service',
+    ref = 'cf-config-service',
     # Command to build the container image
     # On Windows, replace $EXPECTED_REF with %EXPECTED_REF%
-    command = 'gradle bootBuildImage --imageName %EXPECTED_REF%',
+    command = 'gradle bootBuildImage --imageName $EXPECTED_REF',
     # Files to watch that trigger a new build
     deps = ['build.gradle', 'src']
 )
