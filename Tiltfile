@@ -1,5 +1,5 @@
-# Permitir el contexto de Kubernetes 'polar'
-allow_k8s_contexts('polar')
+# Permitir el contexto de Kubernetes 'cluster-dev'
+allow_k8s_contexts('cluster-dev')
 
 # Build
 custom_build(
